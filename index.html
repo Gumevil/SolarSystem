@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+		<title>
+			Solar System
+		</title>
+		<meta http-equiv="X-UA-Compatible" content="IE-10"  />
+		<meta charset="utf-8"/>    
+        <link rel="stylesheet" href="style.css" />
+		<!--<script type="text/javascript" src="cssrefresh.js"></script>	-->
+    </head>    
+    <body>
+	<div id="controls">
+	<p style="color:white">Click to Play/Pause the animation:</p>	
+		<a href="#" class="pauseBtn" onclick="myPauseFunction()">Pause</a>
+		<a href="#" class="playBtn" onclick="myPlayFunction()">Play</a><br><br>
+		<input type="range" id="speedbar" min="1" max="400"  step="0.5" value=.1 oninput="changeOrbitSpeed" onchange="changeOrbitSpeed"> <br>
+		<span>365.26 days per second &#247; </span><span id="spd">spd</span><br><br>	
+		<span>Orbit speeds: <span id="showspeed"> seconds </span>1 earth year = </span><br><br>
+		<span id='planetspd'>Mercury : </span><span id="showspeed0"></span><br>
+		<span id='planetspd'>Venus : </span><span id="showspeed1"></span><br>
+		<span id='planetspd'>Earth : </span><span id="showspeed2"></span><br>
+		<span id='moonspd'><strong> &#8226; </strong> Moon: </span><span id="showspeed3"></span><br>
+		<span id='planetspd'>Mars : </span><span id="showspeed4"></span><br>
+		<span id='planetspd'>Jupiter : </span><span id="showspeed5"></span><br>
+		<span id='moonspd'><strong>&#8226; </strong> moon  Io : </span><span id="showspeed6"></span><br>
+		<span id='moonspd'> &#183; <strong>&#8226; </strong> moon  Europa : </span><span id="showspeed7"></span><br>
+		<span id='moonspd'> &#183;&#183; <strong>&#8226; </strong> moon Ganymede : </span><span id="showspeed8"></span><br>
+		<span id='moonspd'>  &#183;&#183;&#183; <strong>&#8226; </strong> moon  Callisto : </span><span id="showspeed9"></span><br>
+		<span id='planetspd'>Saturn : </span><span id="showspeed10"></span><br>		
+	</div>
+        <!-- image of the sun -->
+		<!--<div class="Sun">-->
+		<img class="sun" src="http://gene-server.com/class/img/sun-animated.gif" title="Sun">
+		<!-- orbit and image for mercury -->
+	<div id='solarsystem'>
+		<div id="mercury-orbit"><!-- style="animation: spin-right 8.796s linear infinite">-->
+			<img class="mercury" src="http://gene-server.com/class/img/mercury.png" title="Mercury">
+		</div>
+		<!-- orbit and image for venus -->
+		<div id="venus-orbit">
+			<img class="venus" src="http://gene-server.com/class/img/venus-animated2.gif" title="Venus"></div>        
+        <!-- orbits and images for earth and (sub) moon -->   
+		<div id="earth-orbit"> 
+			<div id="moon-orbit"><img class="moon" src="http://gene-server.com/class/img/moon.png" title="Moon"></div> 
+		<img class="earth" src="http://gene-server.com/class/img/earth-animated.gif" title="Earth">
+		</div>
+		<!-- orbit and image for mars -->
+		<div id="mars-orbit"> 			
+			<img class="mars" src="http://gene-server.com/class/img/MarsRotating.gif" title="Mars">
+		</div>
+		<!-- orbits and image for jupiter and moons-->
+		<div id="jupiter-orbit">
+			<div id="io-orbit"><img class="io" src="http://gene-server.com/class/img/io.png" title="Io"></div>
+			<div id="europa-orbit"><img class="europa" src="http://gene-server.com/class/img/europa.png" title="Europa"></div>
+			<div id="ganymede-orbit"><img class="ganymede" src="http://gene-server.com/class/img/ganymede.png" title="Ganymede"></div>
+			<div id="callisto-orbit"><img class="callisto" src="http://gene-server.com/class/img/callisto.png" title="Callisto"></div>
+		<img class="jupiter" src="http://gene-server.com/class/img/jupiter_animated.gif" title="Jupiter">
+		</div>
+		<!-- orbit and image for saturn -->
+		<div id="saturn-orbit">
+				<img class="saturn" src="http://gene-server.com/class/img/saturn.jpg" title="Saturn">				
+		</div>
+		<!-- outer planets/moons to follow -->	
+		<script src="script.js"></script>
+	</div>	
+    </body>	
+</html>

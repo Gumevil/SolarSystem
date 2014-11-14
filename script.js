@@ -66,3 +66,9 @@ function changeOrbitSpeed(){
 					}, false);
 			}		
 }
+/*window.onresize = adjustControlSize;
+function adjustControlSize(){
+	var controlsPixelWidth = O(controls).offsetWidth;
+	S(controls).fontSize = 0.1 * controlsPixelWidth + "px";
+	S(controls).width = 0.1 * controlsPixelWidth + "rem";
+}*/

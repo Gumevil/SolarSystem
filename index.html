@@ -6,20 +6,20 @@
 			Solar System
 		</title>
 		<meta http-equiv="X-UA-Compatible" content="IE-10"  />
-		<meta charset="utf-8"/>
-		<!-- meta for mobile app -->
-		<meta name="viewport" content="width=device-width, scale=1, user-scaleable=no">		
+		<meta charset="utf-8"/>    
         <link rel="stylesheet" href="style.css" />
-		<!--<script type="text/javascript" src="cssrefresh.js"></script>	-->
+		<script src="OSC.js"></script>
+		<!--<script type="text/javascript" src="cssrefresh.js"></script>-->
     </head>    
     <body>
 	<div id="controls">
 	<p style="color:white">Click to Play/Pause the animation:</p>	
 		<a href="#" class="pauseBtn" onclick="myPauseFunction()">Pause</a>
-		<a href="#" class="playBtn" onclick="myPlayFunction()">Play</a><br><br>
+		<a href="#" class="playBtn" onclick="myPlayFunction()">Play</a>
+		<br><br>Speedbar<br>
 		<input type="range" id="speedbar" min="1" max="400"  step="0.5" value=.1 oninput="changeOrbitSpeed" onchange="changeOrbitSpeed"> <br>
 		<span>365.26 days per second &#247; </span><span id="spd">spd</span><br><br>	
-		<span>Orbit speeds: <span id="showspeed"> seconds </span>1 earth year = </span><br><br>
+		<span>Orbit speeds: <span id="showspeed"> seconds </span>1 earth year</span><br><br>
 		<span id='planetspd'>Mercury : </span><span id="showspeed0"></span><br>
 		<span id='planetspd'>Venus : </span><span id="showspeed1"></span><br>
 		<span id='planetspd'>Earth : </span><span id="showspeed2"></span><br>

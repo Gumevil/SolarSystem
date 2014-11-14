@@ -2,10 +2,12 @@ html {
     background-color: #000;	
 	font-family: arial;	
 }
-
+body {
+	width: 100rem;
+}
 #controls {
-		position: absolute;
-		display: block;
+		width: 18rem;
+		display: block;		
 		text-align: center;
 		font-size: 18px;
 		float: left;	
@@ -13,8 +15,8 @@ html {
 		padding: 10px;	
 		color: white;
 		z-index: 1;
+		position: fixed;		
 }
-
 .playBtn {
 	-moz-box-shadow:inset 0px 6px 3px 0px #a4e271;
 	-webkit-box-shadow:inset 0px 6px 3px 0px #a4e271;
@@ -55,7 +57,6 @@ html {
 	position:relative;
 	top:1px;
 }
-
 .pauseBtn {
 	-moz-box-shadow:inset 0px 7px 3px 0px #f29c93;
 	-webkit-box-shadow:inset 0px 7px 3px 0px #f29c93;
@@ -96,11 +97,9 @@ html {
 	position:relative;
 	top:1px;
 }
-
 #speedbar {
 		width: 270px;
 }
-
 #spd {
 	color: rgba( 124, 232, 81, 1);
 }
@@ -110,14 +109,12 @@ html {
 	color: rgba(237, 220, 26, 1);
 	text-align: left;
 }
-
 #moonspd {
 	float: left;
 	font-size: 16px;
 	color: rgba( 240, 172, 122, 1);
 	text-align: left;
 }
-
 [id^="showspeed"] {
 	float: right;
 	text-align: right;
@@ -131,17 +128,14 @@ html {
     margin-left: -40px;
     margin-top: -40px;    
     border-radius: 50%;   
-}	
-
+}
 /* Planet speed around the sun are computed as  365.26 ( 1 earth year ) / 20 */
-
 .mercury {
     height: 9px;
     width: 9px;    
     border-radius: 50%;
     box-shadow: green 0 0 25px;
 }
-
 #mercury-orbit {
     position: absolute;
     height: 100px;
@@ -156,14 +150,12 @@ html {
 	animation: spin-right inherit linear infinite;
     -webkit-animation: spin-right inherit linear infinite;	
 }
-
 .venus {
     height: 19px;
     width: 19px;    
     border-radius: 50%;
     box-shadow: brown 0 0 25px;
 }
-
 #venus-orbit {
     position: absolute;
     height: 200px;
@@ -178,14 +170,12 @@ html {
 	animation: spin-right inherit linear infinite;
     -webkit-animation: spin-right inherit linear infinite;
 }
-
 .earth {
     height: 20px;
     width: 20px;    
     border-radius: 50%;
     box-shadow: lightblue 0 0 25px;
 }
-
 #earth-orbit {
     position: absolute;
 	height: 400px;
@@ -200,12 +190,10 @@ html {
 	animation: spin-right inherit linear infinite;
     -webkit-animation: spin-right inherit linear infinite;
 }
-
 .moon {
     height: 5px;
     width: 5px;
 }
-
 #moon-orbit {
     top: 50%;
     left: 50%;
@@ -218,14 +206,12 @@ html {
 	animation: spin-right inherit linear infinite;
     -webkit-animation: spin-right inherit linear infinite;
 }
-
 .mars {
     height: 18px;
     width: 18px;    
     border-radius: 50%;
     box-shadow: red 0 0 25px;
 }
-
 #mars-orbit {
     position: absolute;
     height: 600px;
@@ -241,13 +227,11 @@ html {
 	animation: spin-right inherit linear infinite;
     -webkit-animation: spin-right inherit linear infinite;
 }
-
 .jupiter {
     height: 200px;
     width: 200px;    
     border-radius: 50%;
 }
-
 #jupiter-orbit {
     position: absolute;
     height: 1100px;
@@ -263,12 +247,10 @@ html {
 	animation: spin-right inherit linear infinite;
     -webkit-animation: spin-right inherit linear infinite;
 }
-
 .io {
     height: 10px;
     width: 10px;
 }
-
 #io-orbit {
 	position: inherit;  
     height: 200px;
@@ -281,12 +263,10 @@ html {
 	animation: spin-right inherit linear infinite;
     -webkit-animation: spin-right inherit linear infinite;
 }
-
 .europa {
     height: 9px;
     width: 9px;
 }
-
 #europa-orbit {
 	position: inherit;
     height: 220px;
@@ -299,12 +279,10 @@ html {
 	animation: spin-right inherit linear infinite;
     -webkit-animation: spin-right inherit linear infinite;
 }
-
 .ganymede {
     height: 15px;
     width: 15x;
 }
-
 #ganymede-orbit {
 	position: inherit;
     height: 240px;
@@ -317,12 +295,10 @@ html {
 	animation: spin-right inherit linear infinite;
     -webkit-animation: spin-right inherit linear infinite;
 }
-
 .callisto {
     height: 12px;
     width: 12px;
 }
-
 #callisto-orbit {
 	position: inherit;  
     height: 265px;
@@ -335,13 +311,11 @@ html {
 	animation: spin-right inherit linear infinite;
     -webkit-animation: spin-right inherit linear infinite;
 }
-
 .saturn {
     height: 100px;
     width: 200px;    
     border-radius: 50%;  
 }
-
 #saturn-orbit {
     position: absolute;
     height: 1500px;
@@ -357,13 +331,11 @@ html {
 	animation: spin-right inherit linear infinite;
     -webkit-animation: spin-right inherit linear infinite;
 }
-
 @-webkit-keyframes spin-right {
     100% {
         -webkit-transform: rotate(360deg);
     }
 }
-
 @-webkit-keyframes spin-right {
   100% {
     -webkit-transform: rotate(360deg);
@@ -373,7 +345,6 @@ html {
             transform: rotate(360deg);
 	} 
 }
-
 @keyframes spin-right {
   100% {
     -webkit-transform: rotate(360deg);
